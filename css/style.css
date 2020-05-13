@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main > div{
+    border: 1px solid red;
+    margin: 20px;
+    padding: 20px;
+    height:500px;
+}
+#markdownDiv {
+    width: 100%; 
+}
+.markdown{
+    font-family: 'Roboto Mono', monospace;
+}
+.resualt{
+    font-family: 'Noto Serif', serif;
+}

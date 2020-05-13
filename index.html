@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <div>
-        <textarea id="markdownDiv"></textarea>
-        <button id="convertBtn" onClick="editMarkdown()" class="btn btn-primary">Convert</button>
-    </div>
-    <div>
-        <div id="resultDiv">
-
+    <header>
+        Markdown editor
+    </header>
+    <main>
+        <div class="markdown ">
+            <textarea id="markdownDiv"></textarea>
+            <button id="convertBtn" onClick="editMarkdown()" class="btn btn-primary">Convert</button>
         </div>
-    </div>
+        <div class="resualt">
+            <div id="resultDiv">
+    
+            </div>
+        </div>
+    </main>
+   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
   <script src="js/script.js"></script>
 </body>
