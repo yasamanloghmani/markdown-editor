@@ -7,7 +7,6 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 main > div{
-    
     margin: 20px;
     padding: 20px;
     height:400px;
@@ -61,4 +60,22 @@ img{
     font-weight: bold;
     color: #020060;
     margin: 10px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    main {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-device-width : 580px) {
+    main > div{
+        margin: 20px auto;
+        padding: 20px;
+        height:400px;
+        width: 70%;
+    }
 }
