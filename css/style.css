@@ -1,6 +1,17 @@
+:root {
+    --font:'Noto Serif', serif;
+    --bg-color:#020060;
+    --text-color:orangered;
+}
+
+
+
+
 body {
     text-align: center;
-    background-color: #020060;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font) ;
 }
 main {
     display: grid;
@@ -9,12 +20,12 @@ main {
 main > div{
     margin: 20px;
     padding: 20px;
-    height:400px;
+    height:600px;
     overflow-y: scroll;
-    border-radius: 50px;
-    background: linear-gradient(145deg, #02005f, #020071);
-    box-shadow:  12px 12px 32px #02005a, 
-                 -12px -12px 32px #02007a;
+    border-radius: 40px;
+    /* background: linear-gradient(145deg, #02005f, #020071); */
+    /* box-shadow:  12px 12px 32px #02005a, 
+                 -12px -12px 32px #02007a; */
     
     
 
@@ -22,22 +33,19 @@ main > div{
 #markdownDiv {
     width: 100%; 
     height: 80%;
-    border-radius: 50px;
-    color: #020060;
+    border-radius: 40px;
+    color: var(--bg-color);
     padding : 20px;
 }
 .markdown{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace!important;
 }
-.resualt{
-    font-family: 'Noto Serif', serif;
-}
+
 header{
     width: 100%;
-    background-color: #020060;
-    color:orangered;
+    background-color: var(--bg-color);
+    color:var(--text-color);
     padding : 20px;
-    font-family: 'Noto Serif', serif;
     transition: 0.2s; 
 }
 
@@ -49,23 +57,35 @@ img{
 #resultDiv{
     background-color: white;
     height:80%;
-    border-radius: 50px;
-    color: #020060;
+    border-radius: 40px;
+    color: var(--bg-color);
     padding : 20px;
+    overflow-y: scroll;
 }
 
 .btn {
-    background-color: orangered;
+    background-color: var(--text-color);
     font-size: 20px;
     font-weight: bold;
-    color: #020060;
+    color: var(--bg-color);
     margin: 10px;
 }
 
+#theme{
+    margin: 10px auto;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 
 @media only screen and (max-width: 992px) {
     main {
         display: block;
+    }
+    main > div, #resultDiv, #markdownDiv  {
+        border-radius: 20px;
     }
 
 }
@@ -74,7 +94,6 @@ img{
 @media only screen and (max-device-width : 580px) {
     main > div{
         margin: 20px auto;
-        padding: 20px;
         height:400px;
         width: 70%;
     }

@@ -12,6 +12,28 @@
         <h1 id="header">Fast Markdown</h1>
         <img src='pic.png' id='img'>
     </header>
+    <div id="theme">
+        <h6>Choose your theme:</h6>
+        <div class="text-color">
+            <label>Text Color</label>
+            <input type="color" id="text-color" class="text-color-pricker" data-theme-value="--text-color"/>
+            
+        </div>
+        <div class="bg-color">
+            <label>Background Color</label>
+            <input type="color" id="bg-color" class="bg-color-pricker" data-theme-value="--bg-color"/>
+
+        </div>
+        <div class="font">
+            <label>Font</label>
+            <select class="font-selector" data-theme-value="--font">
+                <option value="'Noto Serif', serif">Noto Serif</option>
+                <option value="'Roboto Mono', monospace">Roboto Mono</optio>
+                <option value="Arial, Helvetica, sans-serif">sans-serif</option>
+
+            </select>
+        </div>
+    </div>
     <main>
         <div class="markdown ">
             <textarea id="markdownDiv"></textarea>
