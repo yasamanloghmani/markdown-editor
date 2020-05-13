@@ -41,9 +41,7 @@ header{
     font-family: 'Noto Serif', serif;
     transition: 0.2s; 
 }
-h1 {
-    font-size: 60px;
-}
+
 img{
     width: 400px;
     height: auto;
@@ -62,4 +60,5 @@ img{
     font-size: 20px;
     font-weight: bold;
     color: #020060;
+    margin: 10px;
 }

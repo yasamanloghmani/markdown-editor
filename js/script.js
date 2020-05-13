@@ -6,15 +6,17 @@ function editMarkdown() {
       
       target.innerHTML = html;
   }
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//     document.getElementById("header").style.fontSize = "30px";
-//     document.getElementById("img").style.width = "200px";
-//   } else {
-//     document.getElementById("header").style.fontSize = "60px";
-//     document.getElementById("img").style.width = "400px";
-//   }
-// }
+ var doc = new jsPDF();
+ var specialElementHandlers = {
+    "#editor": function (element, renderer) {
+      return true;
+    }
+  };
+  
+  $("#cmd").click(function () {
+    doc.fromHTML($("#resultDiv").html(), 15, 15, {
+      width: 170,
+      elementHandlers: specialElementHandlers
+    });
+    doc.save("markdown.pdf");
+  });
