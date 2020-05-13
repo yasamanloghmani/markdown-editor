@@ -36,6 +36,7 @@ main > div{
     border-radius: 40px;
     color: var(--bg-color);
     padding : 20px;
+    outline: none;
 }
 .markdown{
     font-family: 'Roboto Mono', monospace!important;
@@ -79,6 +80,10 @@ img{
     justify-content: space-between;
 
 }
+input {
+    background-color: var(--bg-color);
+    border: none;
+}
 
 @media only screen and (max-width: 992px) {
     main {
@@ -87,7 +92,10 @@ img{
     main > div, #resultDiv, #markdownDiv  {
         border-radius: 20px;
     }
+    label {
+        font-size: 15px;
 
+    }
 }
 
 
@@ -96,5 +104,9 @@ img{
         margin: 20px auto;
         height:400px;
         width: 70%;
+    }
+    label {
+        font-size: 13px;
+
     }
 }
