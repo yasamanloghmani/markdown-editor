@@ -3,10 +3,6 @@
     --bg-color:#020060;
     --text-color:orangered;
 }
-
-
-
-
 body {
     text-align: center;
     background-color: var(--bg-color);
@@ -23,12 +19,6 @@ main > div{
     height:600px;
     overflow-y: scroll;
     border-radius: 40px;
-    /* background: linear-gradient(145deg, #02005f, #020071); */
-    /* box-shadow:  12px 12px 32px #02005a, 
-                 -12px -12px 32px #02007a; */
-    
-    
-
 }
 #markdownDiv {
     width: 100%; 
