@@ -1,0 +1,17 @@
+{
+  "name": "markdown-editor",
+  "homepage": "https://github.com/yasamanloghmani/markdown-editor",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showdown": "^1.9.1"
+  }
+}
